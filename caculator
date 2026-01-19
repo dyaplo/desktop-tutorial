@@ -1,0 +1,22 @@
+try:
+    num1 = float(input("enter number : "))
+    operator=input("enter operator (+ , - , * , / , ^ ) : ")
+    num2 = float(input("enter number"))
+    if operator == "+" :
+        print(num1 + num2)
+    elif operator == "-" :
+        print(num1 - num2)
+    elif operator == "*" :
+        print(num1 * num2)
+    elif operator == "/" :
+        print(num1 / num2)
+    elif operator == "^" :
+        print(num1 ** num2)
+    else:
+        print("error")
+except ValueError:
+    print("invalid input")
+except ZeroDivisionError:
+    print("cannot divide by zero")
+except Exception as e:
+    print(f"an error occurred:", e)

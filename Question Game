@@ -1,0 +1,90 @@
+score=0
+secret_answer1 ="cairo"
+answer1 =""
+count1 = 0
+limit1 = 3
+lose1 =False
+while secret_answer1 != answer1 and not lose1:
+    if count1 < limit1:
+        count1 +=1
+        answer1 = (input("what is the capital of the egypt ? ")).lower()
+    else:
+        lose1 = True
+if lose1 :
+    print("you lose")
+else:
+    print("you win")
+    score +=1
+secret_answer2 ="paris"
+answer2 =""
+count2 = 0
+limit2 = 3
+lose2 =False
+while secret_answer2 != answer2 and not lose2:
+    if count2 < limit2:
+        count2 +=1
+        answer2 = (input("what is the capital of the france ? ")).lower()
+    else:
+        lose2 = True
+if lose2 :
+    print("you lose")
+else:
+    print("you win")
+    score +=1
+secret_answer3 ="london"
+answer3 =""
+count3 = 0
+limit3 = 3
+lose3 =False
+while secret_answer3 != answer3 and not lose3:
+    if count3 < limit3:
+        count3 +=1
+        answer3 = (input("what is the capital of the England ? ")).lower()
+    else:
+        lose3 = True
+if lose3 :
+    print("you lose")
+else:
+    print("you win")
+    score +=1
+secret_answer4 ="beijing"
+answer4 =""
+count4 = 0
+limit4= 3
+lose4=False
+while secret_answer4 != answer4 and not lose4:
+    if count4 < limit4:
+        count4 +=1
+        answer4 = (input("what is the capital of the china ? ")).lower()
+    else:
+        lose4 = True
+if lose4 :
+    print("you lose")
+else:
+    print("you win")
+    score +=1
+secret_answer5 ="washington"
+answer5 =""
+count5 = 0
+limit5 = 3
+lose5 =False
+while secret_answer5 != answer5 and not lose5:
+    if count5 < limit5:
+        count5 +=1
+        answer5 = (input("what is the capital of the USA ? ")).lower()
+    else:
+        lose5 = True
+if lose5 :
+    print("you lose")
+else:
+    print("you win")
+    score +=1
+    print("your score is " + str(score) +"/5")
+if score == 5:
+    print("exlant!")
+elif score >=3:
+    print ("good")
+elif score >=1:
+    print("bad")
+else:
+    print("very bad")
